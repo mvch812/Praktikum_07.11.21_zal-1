@@ -2,7 +2,7 @@
 
 bool x = true;
 bool y = false;
-bool istin(bool x, bool y);
+bool istin(bool x, bool y)
 {
     return (!(x || y)) == (!x && !y);
 }
