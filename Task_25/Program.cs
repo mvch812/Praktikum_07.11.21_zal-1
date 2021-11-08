@@ -1,10 +1,13 @@
 ﻿// 25. Найти сумму чисел от 1 до А
-int i = new Random().Next(1, 100);
 
-int summa(int i)
+Console.WriteLine("Введите число:");
+
+long i = Convert.ToInt64(Console.ReadLine());
+
+long summa(long i)
 {
-    int sum = 0;
-    for (int x = 1; x <= i; x++)
+    long sum = 0;
+    for (long x = 1; x <= i; x++)
     {
         sum = sum + x;
     }
