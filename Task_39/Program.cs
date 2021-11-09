@@ -5,11 +5,9 @@ void FillArrayA(int[] A) // Метод, заполняющий массив A с
 {
     int length = A.Length;
     int index = 0;
-    int summ = 0;
     while (index < length)
     {
         A[index] = new Random().Next(-10, 10);
-        summ = summ + A[index];
         index++;
     }
 }
@@ -25,7 +23,7 @@ void PrintArray(int[] A) // Метод, печатающий массив A
     while (index < A.Length)
     {
         {
-            Console.Write(A[index] + " ");
+            Console.Write($"{A[index]} ");
         }
         index++;
     }
@@ -39,7 +37,7 @@ void Proizv(int[] A) // Метод, подсчитывающий произве�
     for (int x = 0; x <= 6; x++)
     {
         cur = A[(A.Length - x - 1)] * A[x];
-        Console.WriteLine($"Произведение {x}-й пары чисел массива (первый-последний) равно: {cur}");
+        Console.WriteLine($"Произведение {x+1}-й пары чисел массива (первый-последний) равно: {cur}");
     }
 }
 
