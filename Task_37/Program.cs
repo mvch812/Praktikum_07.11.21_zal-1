@@ -5,11 +5,9 @@ void FillArrayA(int[] A) // Метод, заполняющий массив A с
 {
     int length = A.Length;
     int index = 0;
-    int summ = 0;
     while (index < length)
     {
         A[index] = new Random().Next(-100, 1000);
-        summ = summ + A[index];
         index++;
     }
 }
@@ -29,11 +27,11 @@ void PrintArray(int[] A) // Метод, печатающий массив A и �
     {
         if (A[index] >= m && A[index] <= k)
         {
-            Console.Write(A[index] + "* ");
+            Console.Write($"{A[index]}* ");
         }
         else
         {
-            Console.Write(A[index] + " ");
+            Console.Write($"{A[index]} ");
         }
         index++;
     }
