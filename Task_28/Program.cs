@@ -6,7 +6,7 @@ long n = Convert.ToInt64(Console.ReadLine());
 
 long razryadnost(long n)
 {
-    long razr = 0;
+    
     long s = Math.Abs(n);
     long p = 0;
     if (n == 0)
