@@ -11,11 +11,8 @@ void kub(long i)
     {
         if ((x % 10) % 2 == 0)
         {
-            if ((x % 10) != 0)
-            {
-                kubb = Math.Pow(x, 3);
-                Console.WriteLine($"Куб числа {x} = {kubb}");
-            }
+            kubb = Math.Pow(x, 3);
+            Console.WriteLine($"Куб числа {x} = {kubb}");
         }
     }
 }
