@@ -4,29 +4,15 @@ int x = -90;
 int y = -9;
 int Chetvert(int x, int y)
 {
-    int nomerCh = 0;
     if (x > 0)
     {
-        if (y > 0)
-        {
-            nomerCh = 1;
-        }
-        else
-        {
-            nomerCh = 4;
-        }
+        if (y > 0) return 1;
+        else return 4;
     }
     else
     {
-        if (y > 0)
-        {
-            nomerCh = 2;
-        }
-        else
-        {
-            nomerCh = 3;
-        }
+        if (y > 0) return 2;
+        else return 3;
     }
-    return nomerCh;
 }
 Console.WriteLine($"Координата ({x},{y}) находится в {Chetvert(x, y)}-й четверти");
