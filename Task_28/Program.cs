@@ -5,8 +5,7 @@ Console.WriteLine("Введите число:");
 long n = Convert.ToInt64(Console.ReadLine());
 
 long razryadnost(long n)
-{
-    
+{    
     long s = Math.Abs(n);
     long p = 0;
     if (n == 0)
