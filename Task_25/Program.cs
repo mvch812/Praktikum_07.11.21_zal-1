@@ -19,8 +19,6 @@ long summa1(long i) // не оптимальный метод
     return sum;
 }
 
-
-
 long summa2(long i) // оптимальный метод через формулу
 {
     return ((i + 1) * i) / 2;
