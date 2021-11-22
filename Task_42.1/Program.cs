@@ -5,7 +5,7 @@ string text = Console.ReadLine();
 // string.Join(',',array)
 
 
-char[] delimiterChars = { ' ', ',', '.' };
+char[] delimiterChars = { ' ', ',', '.', '(', ')', ';' };
 
 string[] num = text.Split(delimiterChars);
 
