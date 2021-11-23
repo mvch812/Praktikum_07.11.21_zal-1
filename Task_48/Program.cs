@@ -7,7 +7,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 int[,] Array = new int[m, n]; // выделяем память под массив (вводим массив)
 
-void fillArray(int m, int n, int[,] Array) // метод, заполняющий массив случайными числами
+void fillArray(int[,] Array) // метод, заполняющий массив случайными числами
 {
     for (int i = 0; i < Array.GetLength(0); i++)
     {
