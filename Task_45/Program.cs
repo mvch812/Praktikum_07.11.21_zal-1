@@ -27,4 +27,8 @@ void PrintArray(long[] A) // Метод, печатающий массив A
         index++;
     }
 }
+
+DateTime dt = DateTime.Now; // записываем текущее время до выполнения метода
 PrintArray(A);
+Console.WriteLine((DateTime.Now - dt).TotalMilliseconds); // считаем время выполнения операции в милисекундах
+

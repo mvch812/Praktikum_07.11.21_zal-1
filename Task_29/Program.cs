@@ -20,7 +20,7 @@ long i = Convert.ToInt64(Console.ReadLine());
 // Console.WriteLine((DateTime.Now - dt).TotalMilliseconds); // считаем время выполнения операции в милисекундах
 
 // // Решение через рекурсию:
-long Factorial (long i)
+double Factorial (long i)
 {
     // 1!=1 факториал 1 = 1
     //0!=1 факториал 0=1
