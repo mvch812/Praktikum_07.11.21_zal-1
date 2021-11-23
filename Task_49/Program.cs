@@ -7,7 +7,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 double[,] Array = new double[m, n]; // выделяем память под массив (вводим массив)
 
-void fillArray(int m, int n, double[,] Array) // метод, заполняющий массив случайными числами
+void fillArray(double[,] Array) // метод, заполняющий массив случайными числами
 {
     for (int i = 0; i < Array.GetLength(0); i++)
     {
@@ -18,7 +18,7 @@ void fillArray(int m, int n, double[,] Array) // метод, заполняющ�
     }
 }
 
-fillArray(m, n, Array); // заполняем массив
+fillArray(Array); // заполняем массив
 
 string PrintArray(double[,] Array)  // метод печатающий массив в строковую переменную
 {

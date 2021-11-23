@@ -18,7 +18,7 @@ void fillArray(int m, int n, int[,] Array) // метод, заполняющий
     }
 }
 
-fillArray(m, n, Array); // заполняем массив
+fillArray(Array); // заполняем массив
 
 string PrintArray(int[,] Array)  // метод печатающий массив в строковую переменную
 {
