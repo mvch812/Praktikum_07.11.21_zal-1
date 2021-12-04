@@ -7,7 +7,7 @@ string PrintNumbersNtoM(int m, int n)
     else
     {
         if (m > n) return $"{m} {PrintNumbersNtoM((m - 1), n)}";
-        else return $" {m} {PrintNumbersNtoM((m + 1), n)}";
+        else return $"{m} {PrintNumbersNtoM((m + 1), n)}";
     }
 }
 Console.WriteLine(PrintNumbersNtoM(30, 70));
