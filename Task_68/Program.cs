@@ -1,16 +1,15 @@
 ﻿// 68.	Показать натуральные числа от M до N, N и M заданы
 
 
-int PrintNumbersNtoM(int i, int n)
+string PrintNumbersNtoM(int m, int n)
 {
-    Console.Write($"{i} ");
-    if (i == n) return n;
+    if (m == n) return $"{n}";
     else
     {
-        if (i > n) return PrintNumbersNtoM(i - 1, n);
-        else return PrintNumbersNtoM(i + 1, n);
+        if (m > n) return $"{m} {PrintNumbersNtoM((m - 1), n)}";
+        else return $" {m} {PrintNumbersNtoM((m + 1), n)}";
     }
 }
-PrintNumbersNtoM(10, 100);
+Console.WriteLine(PrintNumbersNtoM(30, 70));
 
 
